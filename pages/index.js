@@ -16,7 +16,7 @@ export default function Home() {
           Login
         </button>
         <button>
-          Not a memember? Let's get started
+          Not a member? Let's get started
         </button>
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
