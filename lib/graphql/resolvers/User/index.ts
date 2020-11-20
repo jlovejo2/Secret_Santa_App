@@ -1,13 +1,9 @@
 import { IResolvers } from "apollo-server-express";
 import { Request } from "express";
-import { Database, User } from "../../../lib/types";
-import { authorize } from "../../../lib/utils";
+import { Database, User } from "../../../types";
+import { authorize } from "../../../utils";
 import {
   UserArgs,
-  UserBookingsArgs,
-  UserBookingsData,
-  UserListingsArgs,
-  UserListingsData,
 } from "./types";
 
 export const userResolvers: IResolvers = {
