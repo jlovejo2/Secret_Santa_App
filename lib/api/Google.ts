@@ -16,6 +16,7 @@ export const Google = {
     ],
   }),
   logIn: async (code: string) => {
+    try {
     const { tokens } = await auth.getToken(code);
 
     auth.setCredentials(tokens);
@@ -26,5 +27,9 @@ export const Google = {
     });
 
     return { user: data };
+    } catch(error) {
+      throw new Error('Failed to login in user in Google')
+    }
   },
 };
+
