@@ -1,7 +1,7 @@
 import crypto from "crypto";
 import { Request, Response } from "express";
 import { IResolvers } from "apollo-server-express";
-import { Google } from "../../../api";
+import { Google } from "../../../api/Google";
 import { Viewer, Database, User } from "../../../types";
 import { LogInArgs } from "./types";
 // import { authorize } from "../../../utils";
